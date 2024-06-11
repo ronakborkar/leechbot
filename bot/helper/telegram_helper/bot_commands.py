@@ -7,16 +7,16 @@ class _BotCommands:
         self.MirrorCommand = [f'copy{CMD_SUFFIX}', f'c{CMD_SUFFIX}']
         self.QbMirrorCommand = [f'qbcopy{CMD_SUFFIX}', f'qc{CMD_SUFFIX}']
         self.YtdlCommand = [f'ytdl{CMD_SUFFIX}', f'y{CMD_SUFFIX}']
-        self.LeechCommand = [f'download{CMD_SUFFIX}', d'l{CMD_SUFFIX}']
+        self.LeechCommand = [f'download{CMD_SUFFIX}', f'd{CMD_SUFFIX}']
         self.QbLeechCommand = [f'torrentD{CMD_SUFFIX}', f'qD{CMD_SUFFIX}']
         self.YtdlLeechCommand = [f'ytdwd{CMD_SUFFIX}', f'yd{CMD_SUFFIX}']
-        if config_dict['SHOW_EXTRA_CMDS']:
-            self.MirrorCommand.extend([f'unzipcopy{CMD_SUFFIX}', f'uzc{CMD_SUFFIX}', f'zipcopy{CMD_SUFFIX}', f'zc{CMD_SUFFIX}'])
-            self.QbMirrorCommand.extend([f'qbunzipcopy{CMD_SUFFIX}', f'quzc{CMD_SUFFIX}', f'qbzipcopy{CMD_SUFFIX}', f'qzc{CMD_SUFFIX}'])
-            self.YtdlCommand.extend([f'ytdlzip{CMD_SUFFIX}', f'yz{CMD_SUFFIX}'])
-            self.LeechCommand.extend([f'unzipdwld{CMD_SUFFIX}', f'uzd{CMD_SUFFIX}', f'zipdwld{CMD_SUFFIX}', f'zd{CMD_SUFFIX}'])
-            self.QbLeechCommand.extend([f'qbunzipdwld{CMD_SUFFIX}', f'quzd{CMD_SUFFIX}', f'qbzipdwld{CMD_SUFFIX}', f'qzd{CMD_SUFFIX}'])
-            self.YtdlLeechCommand.extend([f'ytdlzipdwld{CMD_SUFFIX}', f'yzd{CMD_SUFFIX}'])
+    if config_dict['SHOW_EXTRA_CMDS']:
+        self.MirrorCommand.extend([f'unzipcopy{CMD_SUFFIX}', f'uzc{CMD_SUFFIX}', f'zipcopy{CMD_SUFFIX}', f'zc{CMD_SUFFIX}'])
+        self.QbMirrorCommand.extend([f'qbunzipcopy{CMD_SUFFIX}', f'quzc{CMD_SUFFIX}', f'qbzipcopy{CMD_SUFFIX}', f'qzc{CMD_SUFFIX}'])
+        self.YtdlCommand.extend([f'ytdlzip{CMD_SUFFIX}', f'yz{CMD_SUFFIX}'])
+        self.LeechCommand.extend([f'unzipdwld{CMD_SUFFIX}', f'uzd{CMD_SUFFIX}', f'zipdwld{CMD_SUFFIX}', f'zd{CMD_SUFFIX}'])
+        self.QbLeechCommand.extend([f'qbunzipdwld{CMD_SUFFIX}', f'quzd{CMD_SUFFIX}', f'qbzipdwld{CMD_SUFFIX}', f'qzd{CMD_SUFFIX}'])
+        self.YtdlLeechCommand.extend([f'ytdlzipdwld{CMD_SUFFIX}', f'yzd{CMD_SUFFIX}'])
         self.CloneCommand = [f'clone{CMD_SUFFIX}', f'c{CMD_SUFFIX}']
         self.CountCommand = f'count{CMD_SUFFIX}'
         self.DeleteCommand = f'del{CMD_SUFFIX}'
